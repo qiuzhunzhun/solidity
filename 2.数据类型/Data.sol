@@ -9,4 +9,13 @@ contract DataTypes {
     int public maxInt = type(int).max;
     address public addr = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4; // 地址类型
     bytes32 public b32 = 0x7465737400000000000000000000000000000000000000000000000000000000; // 字节类型
+    string public str = "Hello, Solidity"; // 字符串类型
+    uint[5] public arr = [1, 2, 3, 4, 5]; // 固定长度数组
+    struct Person {
+        string name;
+        uint age;
+    }
+    Person public person = Person("Alice", 30); // 结构体类型
+    mapping(address => uint) public balances; // 映射类型
+    enum Status { Active, Inactive, Suspended } // 枚举类型
 }
