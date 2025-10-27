@@ -2,7 +2,7 @@
 pragma solidity 0.8.30;
 
 contract MyError {
-    // require,revert,assert
+    // require,revert,revert
     function testRequire(uint i) public pure {
         require(i < 10, "i > 10");
     }
